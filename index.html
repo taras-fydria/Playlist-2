@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Playlist</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
+
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="ba-background"></div>
+
+	<div class="ba-container">
+		<div class="ba-playlist">
+			<h1 class="ba-playlist__title">
+				Playlist
+			</h1>
+			<ul class="ba-playlist__list">
+				<script type="text/template" id="li-tmpl">
+					<li class="ba-playlist__item">
+					<div class="ba-playlist__row">
+						<div class="ba-playlist__left">
+							<div class="ba-playlist__top">
+								<div class="ba-playlist__duration">
+									{{duration}}
+								</div>
+								<div class="ba-playlist__band">
+									{{author}}
+								</div>
+							</div>
+							<div class="ba-playlist__song">
+								{{song}}
+							</div>
+						</div>
+						<div class="ba-playlist__like">
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+				</li>
+			</script>
+			</ul>
+		</div>
+
+
+
+
+	</div>
+
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>

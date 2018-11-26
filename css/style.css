@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500");
+:root {
+  --colorTitle: #574d72;
+  --colorSmall: #a4a3a9;
+  --colorSvg: #ed5e75; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  background: -webkit-linear-gradient(233deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), -webkit-linear-gradient(323deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), -webkit-linear-gradient(114deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  background: -o-linear-gradient(233deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), -o-linear-gradient(323deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), -o-linear-gradient(114deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%); }
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.ba-playlist {
+  max-width: 400px;
+  padding: 20px 30px;
+  margin: 50px auto 50px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2; }
+  .ba-playlist__title {
+    color: var(--colorTitle);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center; }
+  .ba-playlist__list {
+    list-style: none; }
+  .ba-playlist__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid #e4e2e2;
+    padding: 10px 0; }
+  .ba-playlist__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-size: 12px;
+    color: var(--colorSmall);
+    font-weight: 300;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .ba-playlist__duration {
+    padding-right: 5px;
+    margin-right: 5px; }
+  .ba-playlist__song {
+    color: var(--colorTitle);
+    font-size: 16px;
+    font-weight: 500; }
+    .ba-playlist__song::first-letter {
+      text-transform: uppercase; }
+  .ba-playlist__band {
+    text-transform: capitalize; }
+    .ba-playlist__band::before {
+      display: inline-block;
+      content: "";
+      width: 1px;
+      background: var(--colorSmall);
+      height: 10px;
+      margin-right: 10px; }
+  .ba-playlist__like {
+    color: var(--colorSvg); }
+    .ba-playlist__like:hover {
+      color: #11ec2ccc;
+      cursor: pointer; }
